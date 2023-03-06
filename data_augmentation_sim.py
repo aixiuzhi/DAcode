@@ -15,7 +15,7 @@ import argparse
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--input", default="../data/hotpot/train.jsonl.gz", type=str, help="input file of unaugmented data")
-ap.add_argument("--output", default="hotpot_train_sim_50.jsonl", type=str, help="output file of unaugmented data")
+ap.add_argument("--output", default="hotpot_train.jsonl", type=str, help="output file of unaugmented data")
 ap.add_argument("--num_aug", default=16, type=int, help="number of augmented sentences per original sentence")
 ap.add_argument("--alpha_sr", default=0.05, type=float,
                 help="percent of words in each sentence to be replaced by synonyms")
